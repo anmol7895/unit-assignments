@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id  = "head-1">i am heading</h1>
+    <p id="para">this is para</p>
+    <h2 id="head-2">this is nmew heading</h2>
+</body>
+</html>
+<script>
+    var heading = document.getElementById("head-1").innerHTML;
+    console.log(heading)
+    var ptag = document.getElementById("para").textContent;
+    console.log(ptag);
+
+
+    var head2 = document.getElementById("head-2").innerText="hello! this is another heading";
+    // console.log(head2);
+</script>

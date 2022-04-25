@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>likeDislikeCount</title>
+</head>
+<body>
+    
+    <img src="photo.jpg" alt="" width="200px" height="200px">
+    <h1 id="head-1">count likes here</h1>
+    <h1 id="head-2">count dislike here</h1>
+    <button onclick="firsthead()">like</button>
+    <button onclick="sechead()">dislike</button>
+
+</body>
+</html>
+<script>
+    var like = 0;
+    var dislike = 0;
+function firsthead()
+{
+like++;
+document.getElementById("head-1").innerText = "likes = " + like;
+}
+
+function sechead()
+{
+dislike++;
+// console.log(dislike)
+document.getElementById("head-2").innerText = "Dislikes = " + dislike;
+}
+</script>

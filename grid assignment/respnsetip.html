@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+   display: grid;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: repeat(1,1fr);
+    margin: auto;
+    width: 100%;
+    /* margin-bottom: 10px; */
+}
+#container > div{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    /* width: 100%;
+    margin: auto; */
+}
+@media all and (min-width:600px) and (max-width:900px){
+        #container{
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: 200px;
+/* margin-bottom: 150px; */
+     width: 100%;
+     height: auto;
+      }
+      #container >div{
+          width: 50%;
+          margin: auto;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/india-q-borderless.svg" 
+            alt="error 404">
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/unitus-borderless.svg" alt="">
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/img/our-investors/omidyar-borderless.svg" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masai signup form</title>
+</head>
+<body>
+ 
+    <input id ="name" type="text" placeholder="enter name here" value="">
+    <input id ="mbl" type="number" placeholder="enter number here">
+    <input id = "mail" type="email" placeholder="enter mail here">
+    <button onclick="myfunction()">SignUp</button>
+
+
+    <h1 id="head-1">Show name here</h1>
+    <h1 id="head-2"> show mobile here</h1>
+    <h1 id="head-3">show email here</h1>
+</body>
+</html>
+<script>
+function myfunction()
+{
+    var sname = document.getElementById("name").value;
+// console.log(sname);
+
+var smobile  = document.getElementById("mbl").value;
+// console.log(smobile);
+var semail = document.getElementById("mail").value;
+// console.log(semail);
+
+
+document.getElementById("head-1").innerText = sname;
+document.getElementById("head-2").innerText = smobile;
+document.getElementById("head-3").innerText = semail;
+}
+</script>
